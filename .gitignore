@@ -12,6 +12,7 @@ tests/results/**
 # npm
 **/node_modules/*
 npm-debug.log
+
 yarn-error.log
 
 ## Ignored Dependencies

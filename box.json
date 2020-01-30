@@ -1,9 +1,9 @@
 {
-    "name":"Advanced Script APP Template",
+    "name":"CFML Challenge app",
     "version":"1.31.0",
-    "author":"You",
-    "location":"https://github.com/coldbox-templates/advanced-script/archive/v1.31.0.zip",
-    "slug":"cbtemplate-advanced-script",
+    "author":"Gavin Pickin <gavin@ortussolutions.com>",
+    "location":"https://github.com/learncf/cfmlchallenge-app/archive/v1.31.0.zip",
+    "slug":"cfmlchallenge-app",
     "createPackageDirectory":false,
     "type":"mvc",
     "keywords":"",
@@ -25,16 +25,16 @@
     },
     "installPaths":{
         "coldbox":"coldbox/",
-        "testbox":"testbox/"
+        "testbox":"testbox/",
+        "cfmlchallenge":"modules/cfmlchallenge/"
     },
     "dependencies":{
-        "coldbox":"^5.0.0"
+        "coldbox":"^5.0.0",
+        "cfmlchallenge":"^1.0.0"
     },
     "scripts":{
-        "postVersion":"package set location='https://github.com/coldbox-templates/advanced-script/archive/v`package version`.zip'",
-        "postPublish":"!git push --follow-tags",
-        "postInstall":"pathExists .env || cp .env.example .env",
-        "format":"cfformat config/**/*.cfc,handlers/**/*.cfc,interceptors/**/*.cfc,models/**/*.cfc,modules_app/**/*.cfc,tests/specs/**/*.cfc,*.cfc --overwrite",
-        "format:check":"cfformat config/**/*.cfc,handlers/**/*.cfc,interceptors/**/*.cfc,models/**/*.cfc,modules_app/**/*.cfc,tests/specs/**/*.cfc,*.cfc --check"
+        "postVersion":"package set location='LearnCF/CFMLChallenge-app#v`package version`' && echo 'v`package version`' > .version && !git add .version && git commit -m \"Bump the Version\"",
+        "onRelease":"publish",
+        "postPublish":"!git push && git push --tags"
     }
 }

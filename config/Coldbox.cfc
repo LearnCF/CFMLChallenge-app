@@ -6,7 +6,7 @@ component{
 		// coldbox directives
 		coldbox = {
 			//Application Setup
-			appName 				= getSystemSetting( "APPNAME", "Your app name here" ),
+			appName 				= getSystemSetting( "APPNAME", "CFML Challenge App" ),
 			eventName 				= "event",
 
 			//Development Settings
@@ -14,7 +14,7 @@ component{
 			handlersIndexAutoReload = true,
 
 			//Implicit Events
-			defaultEvent			= "",
+			defaultEvent			= "CFMLChallenge:home.index",
 			requestStartHandler		= "Main.onRequestStart",
 			requestEndHandler		= "",
 			applicationStartHandler = "Main.onAppInit",
