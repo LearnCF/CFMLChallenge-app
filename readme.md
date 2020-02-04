@@ -1,35 +1,15 @@
-# Advanced Script Template
+# CFMLChallenge-App
 
-An advanced template with all the bells and whistles in script format
+The CFML Challenge App is a ColdBox app that houses the CFML Challenge Module, a module built with CFML Challenge tests for you to test your CFML Skills. As the CFML Challenge Module is updated, this app will present you more challenges for you to master CFML.This app was built as on a Live Stream by Gavin Pickin and Michael Born, as a learning tool, and a way for listeners of the Modernize or Die CFML News Podcast to participate in the monthly challenge. 
 
-## License
-
-Apache License, Version 2.0.
-
-## Important Links
-
-Source Code
-
-- https://github.com/coldbox-templates/advanced-script
+Install the app, `box server start` and start your challenge today.
 
 ## Quick Installation
 
-Each application templates contains a `box.json` so it can leverage [CommandBox](http://www.ortussolutions.com/products/commandbox) for its dependencies.  
-Just go into each template directory and type:
+Using CommandBox, run these two commands to install and run the CFMLChallenge app:
 
-```bash
-box install
-```
-
-This will setup all the needed dependencies for each application template.  You can then type:
-
-```bash
-box server start
-```
-
-And run the application.
-
----
+* `box install`
+* `box server start`
  
 ### THE DAILY BREAD
 
