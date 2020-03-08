@@ -1,8 +1,8 @@
 {
     "name":"CFML Challenge app",
-    "version":"1.31.2",
+    "version":"1.32.0",
     "author":"Gavin Pickin <gavin@ortussolutions.com>",
-    "location":"LearnCF/CFMLChallenge-app#v1.31.2",
+    "location":"LearnCF/CFMLChallenge-app#v1.32.0",
     "slug":"cfmlchallenge-app",
     "createPackageDirectory":false,
     "type":"mvc",
