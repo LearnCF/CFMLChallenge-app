@@ -9,10 +9,5 @@ component accessors="true"{
 	CFMLChallenge function init(){
 		return this;
 	}
-	
-	/**
-	 * Please implement a string reverse function and run tests until they pass. 😊
-	 */
-	function reverseString(){}
 
 }
